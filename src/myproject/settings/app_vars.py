@@ -13,11 +13,12 @@ STATIC_URL = "/static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # DATABASE ENV
-DB_NAME = os.environ.get("DB_NAME")
-DB_USER = os.environ.get("DB_USER")
-DB_PASS = os.environ.get("DB_PASSWORD")
-DB_HOST = os.environ.get("DB_HOST")
-DB_PORT = int(os.environ.get("DB_PORT"))
+# In this project we dont need Database
+# DB_NAME = os.environ.get("DB_NAME")
+# DB_USER = os.environ.get("DB_USER")
+# DB_PASS = os.environ.get("DB_PASSWORD")
+# DB_HOST = os.environ.get("DB_HOST")
+# DB_PORT = int(os.environ.get("DB_PORT"))
 
 
 # REDIS & RABBITMQ ENV
