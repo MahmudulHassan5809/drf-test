@@ -6,3 +6,4 @@ django_extensions==3.1.5
 celery==5.2.6
 redis==4.3.1
 drf_yasg==1.20.0
+pre_commit==2.20.0
