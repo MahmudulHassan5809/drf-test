@@ -15,9 +15,10 @@
     4. Create a .env file copy all the ENV variable from .env.example and replace by your values.
        For testing purpose i am not putting .env file in gitignore.
     5. cd src
-    6. Run python manage.py runserver 0.0.0.0:8000
-    7. project will run in http://0.0.0.0:8000
-    8. To test run python manage.py test
+    6. export $(xargs <../.env)
+    7. Run python manage.py runserver 0.0.0.0:8000
+    8. project will run in http://0.0.0.0:8000
+    9. To test run python manage.py test
 
 ## Project Run Using Docker
 
