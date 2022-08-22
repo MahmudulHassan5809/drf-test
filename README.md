@@ -36,7 +36,7 @@
 ## Decode Api
 
     POST REQUEST
-    ENDPOINT  : <http://127.0.0.1:8000/api/v1.0/decode/public/decode/>
+    ENDPOINT  : http://0.0.0.0:8000/api/v1.0/decode/public/decode/
     PAYLOAD   :
     {
             "request_id": "A32W4ER2341",
