@@ -40,7 +40,10 @@ ON_TOP_MIDDLEWARE = [
 
 THIRD_PARTY_MIDDLEWARE = []
 
-LOCAL_MIDDLEWARE = []
+LOCAL_MIDDLEWARE = [
+    # 'base.middleware.AuthMiddleware', # If we need JWT authentication we need to use this middleware
+    "base.middleware.RequestResponseLogMiddleware",
+]
 
 if settings.DEBUG:
     THIRD_PARTY_MIDDLEWARE += ["debug_toolbar.middleware.DebugToolbarMiddleware"]

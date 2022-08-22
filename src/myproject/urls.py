@@ -6,6 +6,8 @@ from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from rest_framework import permissions
 
+from base.views import health_check
+
 schema_view = get_schema_view(
     openapi.Info(
         title=settings.PROJECT_TITLE,
@@ -21,7 +23,8 @@ schema_view = get_schema_view(
 v1_patterns = []
 
 urlpatterns = [
-    path("api/", include([path("v1.0/", include(v1_patterns))])),
+    path("", health_check),
+    path("api/", include([path(f"{settings.PROJECT_VERSION}/", include(v1_patterns))])),
     path("admin/", admin.site.urls),
 ]
 
