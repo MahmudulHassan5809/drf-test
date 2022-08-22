@@ -1,5 +1,4 @@
 from django.conf import settings
-from django.contrib import admin
 from django.urls import include, path
 from django.urls.conf import re_path
 from drf_yasg import openapi
@@ -27,7 +26,7 @@ v1_patterns = [
 urlpatterns = [
     path("", health_check),
     path("api/", include([path(f"{settings.PROJECT_VERSION}/", include(v1_patterns))])),
-    path("admin/", admin.site.urls),
+    # path("admin/", admin.site.urls),
 ]
 
 urlpatterns += [
