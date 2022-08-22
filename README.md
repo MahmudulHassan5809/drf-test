@@ -26,7 +26,7 @@
     2. check .env file set with all the necessary variables (For testing purpose i am not putting .env file in gitignore.)
     3. run docker-compose up --build --remove-orphans
     4. project will run in http://0.0.0.0:8000
-    5. in separate terminal run docker-compose exec app bash
+    5. in separate terminal run docker-compose exec app bash (add user to docker group or run as sudo)
     6. in the docker shell run cd src && ./manage.py test
 
 ## Api Documentation (swagger)
