@@ -15,7 +15,7 @@ ON_TOP_APPS = [
 
 THIRD_PARTY_APPS = ["rest_framework"]
 
-LOCAL_APPS = []
+LOCAL_APPS = ["base", "decode"]
 
 INSTALLED_APPS = ON_TOP_APPS + DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
