@@ -20,7 +20,9 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )
 
-v1_patterns = []
+v1_patterns = [
+    path("decode/", include("decode.urls", namespace="decode.apis")),
+]
 
 urlpatterns = [
     path("", health_check),

@@ -15,5 +15,9 @@ def exception_handler(func):
             )
         except (ObjectDoesNotExist, Http404) as ex:
             return Response({"message": ex.__str__()}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as ex:
+            return Response(
+                {"message": ex.__str__()}, status=status.HTTP_400_BAD_REQUEST
+            )
 
     return inner_function
